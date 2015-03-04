@@ -1,0 +1,5 @@
+/packages
+/FOAASClient/obj
+/FOAASClient/bin
+/FOASSClient.Tests/obj
+/FOASSClient.Tests/bin
