@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Net;
 using System.Net.Http;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -11,13 +7,21 @@ namespace FOAASClient
 {
     public class FoaasClient : IFoaasClient
     {
-        private const string baseUrl = "http://foaas.com";
+        private const string BaseUrl = "http://foaas.com";
 
         private async Task<Response> Get(string url, params string[] parameters)
         {
-            var client = new HttpClient();
-            client.DefaultRequestHeaders.TryAddWithoutValidation("accept", "application/json");
-            var res = await client.GetStringAsync(baseUrl + url+"/"+string.Join("/", parameters));
+            var handler = new HttpClientHandler();
+            if (handler.SupportsAutomaticDecompression)
+            {
+                handler.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+            }
+
+            var client = new HttpClient(handler);
+            client.DefaultRequestHeaders.TryAddWithoutValidation("Accept", "application/json");
+            client.DefaultRequestHeaders.TryAddWithoutValidation("Accept-Encoding", "gzip, deflate");
+            
+            var res = await client.GetStringAsync(BaseUrl + url+"/"+string.Join("/", parameters));
             return JsonConvert.DeserializeObject<Response>(res);
         }
 
