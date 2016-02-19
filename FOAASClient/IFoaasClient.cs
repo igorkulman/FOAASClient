@@ -44,5 +44,11 @@ namespace FOAASClient
         Task<Response> Tucker(string from);
         Task<Response> Bucket(string from);
         Task<Response> Family(string from);
+        Task<Response> Shutup(string name, string from);
+        Task<Response> Zayn(string from);
+        Task<Response> KeepCalm(string reaction, string from);
+        Task<Response> DoSomething(string todo, string something, string from);
+        Task<Response> Thumbs(string who, string from);
+        Task<Response> Retard(string from);
     }
 }

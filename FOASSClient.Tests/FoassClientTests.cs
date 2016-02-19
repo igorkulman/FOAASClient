@@ -302,7 +302,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- The Crew", res.Subtitle);
         }
 
-        //TODO: Add FuckingAwesomeShouldWork() Test.
         [TestMethod]
         public async Task FuckingAwesomeShouldWork()
         {
@@ -312,7 +311,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Macklemore", res.Subtitle);
         }
 
-        //TODO: Add FuckingTuckerShouldWork() Test.
         [TestMethod]
         public async Task FuckingTuckerShouldWork()
         {
@@ -322,7 +320,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Malcolm Tucker", res.Subtitle);
         }
 
-        //TODO: Add FuckingBucketShouldWork() Test.
         [TestMethod]
         public async Task FuckingBucketShouldWork()
         {
@@ -332,7 +329,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Richard Dickson", res.Subtitle);
         }
 
-        //TODO: Add FuckingFamilyShouldWork() Test.
         [TestMethod]
         public async Task FuckingFamilyShouldWork()
         {
@@ -343,13 +339,62 @@ namespace FOASSClient.Tests
         }
 
         //TODO: Add FuckingShutupShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingShutupShouldWork()
+        {
+            var res = await _foaasClient.Shutup("Jeff","Gary");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Jeff, shut the fuck up.", res.Message);
+            Assert.AreEqual("- Gary", res.Subtitle);
+        }
 
         //TODO: Add FuckingZaynShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingZaynShouldWork()
+        {
+            var res = await _foaasClient.Zayn("Zayn");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Ask me if I give a motherfuck ?!!",res.Message);
+            Assert.AreEqual("- Zayn",res.Subtitle);
+        }
 
         //TODO: Add FuckingKeepCalmShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingKeepCalmShouldWork()
+        {
+            var res = await _foaasClient.KeepCalm("Cry me a fast flowing river", "Dustin Timberland");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Keep the fuck calm and Cry me a fast flowing river!",res.Message);
+            Assert.AreEqual("- Dustin Timberland", res.Subtitle);
+        }
 
         //TODO: Add FuckingDoSomethingShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingDoSomethingShouldWork()
+        {
+            var res = await _foaasClient.DoSomething("Get", "Washing", "Mother");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Get the fucking Washing!",res.Message);
+            Assert.AreEqual("- Mother", res.Subtitle);
+        }
 
+        //TODO: Add FuckingThumbsShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingThumbsShouldWork()
+        {
+            var res = await _foaasClient.Thumbs("This Guy","Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Who has two thumbs and doesn't give a fuck? This Guy.",res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
         //TODO: Add FuckingRetardShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingRetardShouldWork()
+        {
+            var res = await _foaasClient.Retard("Josh");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("You Fucktard!",res.Message);
+            Assert.AreEqual("- Josh",res.Subtitle);
+        }
     }
 }

@@ -205,5 +205,35 @@ namespace FOAASClient
         {
             return Get("/family", @from);
         }
+
+        public Task<Response> Shutup(string name, string @from)
+        {
+            return Get("/shutup", name, @from);
+        }
+
+        public Task<Response> Zayn(string @from)
+        {
+            return Get("/zayn", @from);
+        }
+
+        public Task<Response> KeepCalm(string reaction, string @from)
+        {
+            return Get("/keepcalm", reaction, @from);
+        }
+
+        public Task<Response> DoSomething(string todo, string something, string @from)
+        {
+            return Get("/dosomething", todo, something, @from);
+        }
+
+        public Task<Response> Thumbs(string who, string @from)
+        {
+            return Get("/thumbs", who, @from);
+        }
+
+        public Task<Response> Retard(string @from)
+        {
+            return Get("/retard", @from);
+        }
     }
 }
