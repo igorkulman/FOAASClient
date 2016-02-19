@@ -90,6 +90,16 @@ namespace FOAASClient
             return Get("/chainsaw",name, @from);
         }
 
+        public Task<Response> Outside(string name, string @from)
+        {
+            return Get("/outside", name, @from);
+        }
+
+        public Task<Response> Thing(string thing, string @from)
+        {
+            return Get($"/{thing}", @from);
+        }
+
         public Task<Response> Thanks(string @from)
         {
             return Get("/thanks", @from);

@@ -21,6 +21,8 @@ namespace FOAASClient
         Task<Response> Pink(string from);
         Task<Response> Life(string from);
         Task<Response> Chainsaw(string name, string from);
+        Task<Response> Outside(string name, string from);
+        Task<Response> Thing(string thing, string from);
         Task<Response> Thanks(string from);
         Task<Response> Flying(string from);
         Task<Response> Fascinating(string from);

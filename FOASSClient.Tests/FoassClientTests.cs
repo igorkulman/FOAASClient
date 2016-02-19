@@ -131,6 +131,26 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Dr. McCoy", res.Subtitle);
         }
 
+        //TODO: Add FuckingOutsideShouldWork() Test
+        [TestMethod]
+        public async Task FuckingOutsideShouldWork()
+        {
+            var res = await _foaasClient.Outside("BigBrother", "TheWorld");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("BigBrother, why don't you go outside and play hide-and-go-fuck-yourself?", res.Message);
+            Assert.AreEqual("- TheWorld",res.Subtitle);
+        }
+
+        //TODO: Add FuckingThingShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingThingShouldWork()
+        {
+            var res = await _foaasClient.Thing("pineapples", "Chris");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Fuck pineapples.",res.Message);
+            Assert.AreEqual("- Chris", res.Subtitle);
+        }
+
         [TestMethod]
         public async Task FuckingThanksShouldWork()
         {
@@ -166,5 +186,49 @@ namespace FOASSClient.Tests
             Assert.AreEqual("What you've just said is one of the most insanely idiotic things I have ever heard, Doctor. At no point in your rambling, incoherent response were you even close to anything that could be considered a rational thought. Everyone in this room is now dumber for having listened to it. I award you no points Doctor, and may God have mercy on your soul.", res.Message);
             Assert.AreEqual("- Rose", res.Subtitle);
         }
+
+        //TODO: Add FuckingCoolShouldWork() Test.
+
+        //TODO: Add FuckingFieldShouldWork() Test.
+
+        //TODO: Add FuckingNuggetShouldWork() Test.
+
+        //TODO: Add FuckingYodaShouldWork() Test.
+
+        //TODO: Add FuckingBallmerShouldWork() Test.
+
+        //TODO: Add FuckingWhatShouldWork() Test.
+
+        //TODO: Add FuckingBecauseShouldWork() Test.
+
+        //TODO: Add FuckingCaniuseShouldWork() Test.
+
+        //TODO: Add FuckingByeShouldWork() Test.
+
+        //TODO: Add FuckingDiabetesShouldWork() Test.
+
+        //TODO: Add FuckingBusShouldWork() Test.
+
+        //TODO: Add FuckingXmasShouldWork() Test.
+
+        //TODO: Add FuckingBdayShouldWork() Test.
+
+        //TODO: Add FuckingAwesomeShouldWork() Test.
+
+        //TODO: Add FuckingTuckerShouldWork() Test.
+
+        //TODO: Add FuckingBucketShouldWork() Test.
+
+        //TODO: Add FuckingFamilyShouldWork() Test.
+
+        //TODO: Add FuckingShutupShouldWork() Test.
+
+        //TODO: Add FuckingZaynShouldWork() Test.
+
+        //TODO: Add FuckingKeepCalmShouldWork() Test.
+
+        //TODO: Add FuckingDoSomethingShouldWork() Test.
+
+        //TODO: Add FuckingRetardShouldWork() Test.
     }
 }
