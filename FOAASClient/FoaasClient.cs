@@ -185,5 +185,25 @@ namespace FOAASClient
         {
             return Get("/bday", name, @from);
         }
+
+        public Task<Response> Awesome(string @from)
+        {
+            return Get("/awesome", @from);
+        }
+
+        public Task<Response> Tucker(string @from)
+        {
+            return Get("/tucker", @from);
+        }
+
+        public Task<Response> Bucket(string @from)
+        {
+            return Get("/bucket", @from);
+        }
+
+        public Task<Response> Family(string @from)
+        {
+            return Get("/family", @from);
+        }
     }
 }

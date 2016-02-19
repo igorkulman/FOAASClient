@@ -40,5 +40,9 @@ namespace FOAASClient
         Task<Response> Bus(string name, string from);
         Task<Response> Xmas(string name, string from);
         Task<Response> Bday(string name, string from);
+        Task<Response> Awesome(string from);
+        Task<Response> Tucker(string from);
+        Task<Response> Bucket(string from);
+        Task<Response> Family(string from);
     }
 }
