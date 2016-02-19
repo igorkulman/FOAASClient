@@ -119,5 +119,20 @@ namespace FOAASClient
         {
             return Get("/madison", name, @from);
         }
+
+        public Task<Response> Cool(string @from)
+        {
+            return Get("/cool", @from);
+        }
+
+        public Task<Response> Field(string name, string @from, string reference)
+        {
+            return Get("/field", name, @from, reference);
+        }
+
+        public Task<Response> Nugget(string name, string @from)
+        {
+            return Get("/nugget", name, @from);
+        }
     }
 }

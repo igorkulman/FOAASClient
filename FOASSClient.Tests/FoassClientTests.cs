@@ -131,7 +131,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Dr. McCoy", res.Subtitle);
         }
 
-        //TODO: Add FuckingOutsideShouldWork() Test
         [TestMethod]
         public async Task FuckingOutsideShouldWork()
         {
@@ -141,7 +140,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- TheWorld",res.Subtitle);
         }
 
-        //TODO: Add FuckingThingShouldWork() Test.
         [TestMethod]
         public async Task FuckingThingShouldWork()
         {
@@ -188,10 +186,34 @@ namespace FOASSClient.Tests
         }
 
         //TODO: Add FuckingCoolShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingCoolShouldWork()
+        {
+            var res = await _foaasClient.Cool("Luke");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Cool story, bro.", res.Message);
+            Assert.AreEqual("- Luke", res.Subtitle);
+        }
 
         //TODO: Add FuckingFieldShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingFieldShouldWork()
+        {
+            var res = await _foaasClient.Field("Yo Momma", "John", "A Book, Chapter 2.");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("And Yo Momma said unto John \'Verily, cast thine eyes upon the field in which I grow my fucks\', and John gave witness unto this field, and saw that is was barren.", res.Message);
+            Assert.AreEqual("- A Book, Chapter 2.", res.Subtitle);
+        }
 
         //TODO: Add FuckingNuggetShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingNuggetShouldWork()
+        {
+            var res = await _foaasClient.Nugget("Bill", "Ben");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Well Bill, aren't you a shining example of a rancid fuck-nugget.", res.Message);
+            Assert.AreEqual("- Ben", res.Subtitle);
+        }
 
         //TODO: Add FuckingYodaShouldWork() Test.
 

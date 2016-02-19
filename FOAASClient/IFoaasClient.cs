@@ -27,5 +27,8 @@ namespace FOAASClient
         Task<Response> Flying(string from);
         Task<Response> Fascinating(string from);
         Task<Response> Madison(string name, string from);
+        Task<Response> Cool(string from);
+        Task<Response> Field(string name, string from, string reference);
+        Task<Response> Nugget(string name, string from);
     }
 }
