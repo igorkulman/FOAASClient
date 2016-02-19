@@ -212,7 +212,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Ben", res.Subtitle);
         }
 
-        //TODO: Add FuckingYodaShouldWork() Test.
         [TestMethod]
         public async Task FuckingYodaShouldWork()
         {
@@ -222,7 +221,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Yoda", res.Subtitle);
         }
 
-        //TODO: Add FuckingBallmerShouldWork() Test.
         [TestMethod]
         public async Task FuckingBallmerShouldWork()
         {
@@ -232,7 +230,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Ballmer", res.Subtitle);
         }
 
-        //TODO: Add FuckingWhatShouldWork() Test.
         [TestMethod]
         public async Task FuckingWhatShouldWork()
         {
@@ -242,7 +239,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Frank", res.Subtitle);
         }
 
-        //TODO: Add FuckingBecauseShouldWork() Test.
         [TestMethod]
         public async Task FuckingBecauseShouldWork()
         {
@@ -252,7 +248,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Tina", res.Subtitle);
         }
 
-        //TODO: Add FuckingCaniuseShouldWork() Test.
         [TestMethod]
         public async Task FuckingCaniuseShouldWork()
         {
@@ -262,7 +257,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Bob the Builder", res.Subtitle);
         }
 
-        //TODO: Add FuckingByeShouldWork() Test.
         [TestMethod]
         public async Task FuckingByeShouldWork()
         {
@@ -272,7 +266,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Claire", res.Subtitle);
         }
 
-        //TODO: Add FuckingDiabetesShouldWork() Test.
         [TestMethod]
         public async Task FuckingDiabetesShouldWork()
         {
@@ -282,7 +275,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Charley", res.Subtitle);
         }
 
-        //TODO: Add FuckingBusShouldWork() Test.
         [TestMethod]
         public async Task FuckingBusShouldWork()
         {
@@ -291,7 +283,7 @@ namespace FOASSClient.Tests
             Assert.AreEqual("Christ on a bendy-bus, Laura, don't be such a fucking faff-arse.",res.Message);
             Assert.AreEqual("- James", res.Subtitle);
         }
-        //TODO: Add FuckingXmasShouldWork() Test.
+
         [TestMethod]
         public async Task FuckingXmasShouldWork()
         {
@@ -301,7 +293,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Your Mother", res.Subtitle);
         }
 
-        //TODO: Add FuckingBdayShouldWork() Test.
         [TestMethod]
         public async Task FuckingBdayShouldWork()
         {
