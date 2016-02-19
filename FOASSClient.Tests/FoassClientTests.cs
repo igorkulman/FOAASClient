@@ -338,7 +338,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Jezza", res.Subtitle);
         }
 
-        //TODO: Add FuckingShutupShouldWork() Test.
         [TestMethod]
         public async Task FuckingShutupShouldWork()
         {
@@ -348,7 +347,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Gary", res.Subtitle);
         }
 
-        //TODO: Add FuckingZaynShouldWork() Test.
         [TestMethod]
         public async Task FuckingZaynShouldWork()
         {
@@ -358,7 +356,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Zayn",res.Subtitle);
         }
 
-        //TODO: Add FuckingKeepCalmShouldWork() Test.
         [TestMethod]
         public async Task FuckingKeepCalmShouldWork()
         {
@@ -368,7 +365,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Dustin Timberland", res.Subtitle);
         }
 
-        //TODO: Add FuckingDoSomethingShouldWork() Test.
         [TestMethod]
         public async Task FuckingDoSomethingShouldWork()
         {
@@ -378,7 +374,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Mother", res.Subtitle);
         }
 
-        //TODO: Add FuckingThumbsShouldWork() Test.
         [TestMethod]
         public async Task FuckingThumbsShouldWork()
         {
@@ -387,7 +382,7 @@ namespace FOASSClient.Tests
             Assert.AreEqual("Who has two thumbs and doesn't give a fuck? This Guy.",res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
-        //TODO: Add FuckingRetardShouldWork() Test.
+
         [TestMethod]
         public async Task FuckingRetardShouldWork()
         {
