@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Xml;
 using Newtonsoft.Json;
 
 namespace FOAASClient
@@ -133,6 +134,56 @@ namespace FOAASClient
         public Task<Response> Nugget(string name, string @from)
         {
             return Get("/nugget", name, @from);
+        }
+
+        public Task<Response> Yoda(string name, string @from)
+        {
+            return Get("/yoda", name, @from);
+        }
+
+        public Task<Response> Ballmer(string name, string company, string @from)
+        {
+            return Get("/ballmer", name, company, @from);
+        }
+
+        public Task<Response> What(string @from)
+        {
+            return Get("/what", @from);
+        }
+
+        public Task<Response> Because(string @from)
+        {
+            return Get("/because", @from);
+        }
+
+        public Task<Response> Caniuse(string tool, string @from)
+        {
+            return Get("/caniuse", tool, @from);
+        }
+
+        public Task<Response> Bye(string @from)
+        {
+            return Get("/bye", @from);
+        }
+
+        public Task<Response> Diabetes(string @from)
+        {
+            return Get("/diabetes", @from);
+        }
+
+        public Task<Response> Bus(string name, string @from)
+        {
+            return Get("/bus", name, @from);
+        }
+
+        public Task<Response> Xmas(string name, string @from)
+        {
+            return Get("/xmas", name, @from);
+        }
+
+        public Task<Response> Bday(string name, string @from)
+        {
+            return Get("/bday", name, @from);
         }
     }
 }

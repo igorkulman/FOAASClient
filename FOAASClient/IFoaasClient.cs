@@ -30,5 +30,15 @@ namespace FOAASClient
         Task<Response> Cool(string from);
         Task<Response> Field(string name, string from, string reference);
         Task<Response> Nugget(string name, string from);
+        Task<Response> Yoda(string name, string from);
+        Task<Response> Ballmer(string name, string company, string from);
+        Task<Response> What(string from);
+        Task<Response> Because(string from);
+        Task<Response> Caniuse(string tool, string from);
+        Task<Response> Bye(string from);
+        Task<Response> Diabetes(string from);
+        Task<Response> Bus(string name, string from);
+        Task<Response> Xmas(string name, string from);
+        Task<Response> Bday(string name, string from);
     }
 }

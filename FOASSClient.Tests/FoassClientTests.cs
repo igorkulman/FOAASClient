@@ -185,7 +185,6 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Rose", res.Subtitle);
         }
 
-        //TODO: Add FuckingCoolShouldWork() Test.
         [TestMethod]
         public async Task FuckingCoolShouldWork()
         {
@@ -195,17 +194,15 @@ namespace FOASSClient.Tests
             Assert.AreEqual("- Luke", res.Subtitle);
         }
 
-        //TODO: Add FuckingFieldShouldWork() Test.
         [TestMethod]
         public async Task FuckingFieldShouldWork()
         {
             var res = await _foaasClient.Field("Yo Momma", "John", "A Book, Chapter 2.");
             Assert.IsNotNull(res);
-            Assert.AreEqual("And Yo Momma said unto John \'Verily, cast thine eyes upon the field in which I grow my fucks\', and John gave witness unto this field, and saw that is was barren.", res.Message);
+            Assert.AreEqual("And Yo Momma said unto John, 'Verily, cast thine eyes upon the field in which I grow my fucks', and John gave witness unto the field, and saw that it was barren.", res.Message);
             Assert.AreEqual("- A Book, Chapter 2.", res.Subtitle);
         }
 
-        //TODO: Add FuckingNuggetShouldWork() Test.
         [TestMethod]
         public async Task FuckingNuggetShouldWork()
         {
@@ -216,24 +213,103 @@ namespace FOASSClient.Tests
         }
 
         //TODO: Add FuckingYodaShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingYodaShouldWork()
+        {
+            var res = await _foaasClient.Yoda("Luke", "Yoda");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Fuck off, you must, Luke.", res.Message);
+            Assert.AreEqual("- Yoda", res.Subtitle);
+        }
 
         //TODO: Add FuckingBallmerShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingBallmerShouldWork()
+        {
+            var res = await _foaasClient.Ballmer("Someone", "Something", "Ballmer");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Fucking Someone is a fucking pussy. I'm going to fucking bury that guy, I have done it before, and I will do it again. I'm going to fucking kill Something.",res.Message);
+            Assert.AreEqual("- Ballmer", res.Subtitle);
+        }
 
         //TODO: Add FuckingWhatShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingWhatShouldWork()
+        {
+            var res = await _foaasClient.What("Frank");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("What the fuck‽", res.Message);
+            Assert.AreEqual("- Frank", res.Subtitle);
+        }
 
         //TODO: Add FuckingBecauseShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingBecauseShouldWork()
+        {
+            var res = await _foaasClient.Because("Tina");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Why? Because Fuck you, that's why.", res.Message);
+            Assert.AreEqual("- Tina", res.Subtitle);
+        }
 
         //TODO: Add FuckingCaniuseShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingCaniuseShouldWork()
+        {
+            var res = await _foaasClient.Caniuse("Hammer", "Bob the Builder");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Can you use Hammer? Fuck no!", res.Message);
+            Assert.AreEqual("- Bob the Builder", res.Subtitle);
+        }
 
         //TODO: Add FuckingByeShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingByeShouldWork()
+        {
+            var res = await _foaasClient.Bye("Claire");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Fuckity bye!", res.Message);
+            Assert.AreEqual("- Claire", res.Subtitle);
+        }
 
         //TODO: Add FuckingDiabetesShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingDiabetesShouldWork()
+        {
+            var res = await _foaasClient.Diabetes("Charley");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("I'd love to stop and chat to you but I'd rather have type 2 diabetes.", res.Message);
+            Assert.AreEqual("- Charley", res.Subtitle);
+        }
 
         //TODO: Add FuckingBusShouldWork() Test.
-
+        [TestMethod]
+        public async Task FuckingBusShouldWork()
+        {
+            var res = await _foaasClient.Bus("Laura", "James");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Christ on a bendy-bus, Laura, don't be such a fucking faff-arse.",res.Message);
+            Assert.AreEqual("- James", res.Subtitle);
+        }
         //TODO: Add FuckingXmasShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingXmasShouldWork()
+        {
+            var res = await _foaasClient.Xmas("Clive", "Your Mother");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Merry Fucking Christmas, Clive.", res.Message);
+            Assert.AreEqual("- Your Mother", res.Subtitle);
+        }
 
         //TODO: Add FuckingBdayShouldWork() Test.
+        [TestMethod]
+        public async Task FuckingBdayShouldWork()
+        {
+            var res = await _foaasClient.Bday("Grant", "The Crew");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Happy Fucking Birthday, Grant.", res.Message);
+            Assert.AreEqual("- The Crew", res.Subtitle);
+        }
 
         //TODO: Add FuckingAwesomeShouldWork() Test.
 
