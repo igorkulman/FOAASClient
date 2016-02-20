@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Xml;
 using Newtonsoft.Json;
 
 namespace FOAASClient
@@ -90,6 +91,16 @@ namespace FOAASClient
             return Get("/chainsaw",name, @from);
         }
 
+        public Task<Response> Outside(string name, string @from)
+        {
+            return Get("/outside", name, @from);
+        }
+
+        public Task<Response> Thing(string thing, string @from)
+        {
+            return Get($"/{thing}", @from);
+        }
+
         public Task<Response> Thanks(string @from)
         {
             return Get("/thanks", @from);
@@ -108,6 +119,121 @@ namespace FOAASClient
         public Task<Response> Madison(string name, string @from)
         {
             return Get("/madison", name, @from);
+        }
+
+        public Task<Response> Cool(string @from)
+        {
+            return Get("/cool", @from);
+        }
+
+        public Task<Response> Field(string name, string @from, string reference)
+        {
+            return Get("/field", name, @from, reference);
+        }
+
+        public Task<Response> Nugget(string name, string @from)
+        {
+            return Get("/nugget", name, @from);
+        }
+
+        public Task<Response> Yoda(string name, string @from)
+        {
+            return Get("/yoda", name, @from);
+        }
+
+        public Task<Response> Ballmer(string name, string company, string @from)
+        {
+            return Get("/ballmer", name, company, @from);
+        }
+
+        public Task<Response> What(string @from)
+        {
+            return Get("/what", @from);
+        }
+
+        public Task<Response> Because(string @from)
+        {
+            return Get("/because", @from);
+        }
+
+        public Task<Response> Caniuse(string tool, string @from)
+        {
+            return Get("/caniuse", tool, @from);
+        }
+
+        public Task<Response> Bye(string @from)
+        {
+            return Get("/bye", @from);
+        }
+
+        public Task<Response> Diabetes(string @from)
+        {
+            return Get("/diabetes", @from);
+        }
+
+        public Task<Response> Bus(string name, string @from)
+        {
+            return Get("/bus", name, @from);
+        }
+
+        public Task<Response> Xmas(string name, string @from)
+        {
+            return Get("/xmas", name, @from);
+        }
+
+        public Task<Response> Bday(string name, string @from)
+        {
+            return Get("/bday", name, @from);
+        }
+
+        public Task<Response> Awesome(string @from)
+        {
+            return Get("/awesome", @from);
+        }
+
+        public Task<Response> Tucker(string @from)
+        {
+            return Get("/tucker", @from);
+        }
+
+        public Task<Response> Bucket(string @from)
+        {
+            return Get("/bucket", @from);
+        }
+
+        public Task<Response> Family(string @from)
+        {
+            return Get("/family", @from);
+        }
+
+        public Task<Response> Shutup(string name, string @from)
+        {
+            return Get("/shutup", name, @from);
+        }
+
+        public Task<Response> Zayn(string @from)
+        {
+            return Get("/zayn", @from);
+        }
+
+        public Task<Response> KeepCalm(string reaction, string @from)
+        {
+            return Get("/keepcalm", reaction, @from);
+        }
+
+        public Task<Response> DoSomething(string todo, string something, string @from)
+        {
+            return Get("/dosomething", todo, something, @from);
+        }
+
+        public Task<Response> Thumbs(string who, string @from)
+        {
+            return Get("/thumbs", who, @from);
+        }
+
+        public Task<Response> Retard(string @from)
+        {
+            return Get("/retard", @from);
         }
     }
 }
