@@ -226,6 +226,11 @@ namespace FOAASClient
             return Get("/dosomething", todo, something, @from);
         }
 
+        public Task<Response> Mornin(string @from)
+        {
+            return Get("/mornin", @from);
+        }
+
         public Task<Response> Thumbs(string who, string @from)
         {
             return Get("/thumbs", who, @from);
@@ -234,6 +239,11 @@ namespace FOAASClient
         public Task<Response> Retard(string @from)
         {
             return Get("/retard", @from);
+        }
+
+        public Task<Response> Greed(string noun, string @from)
+        {
+            return Get("/greed", noun, @from);
         }
     }
 }

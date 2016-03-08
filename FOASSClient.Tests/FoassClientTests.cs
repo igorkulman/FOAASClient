@@ -406,7 +406,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Greed("Cash", "BigCat");
             Assert.IsNotNull(res);
-            Assert.AreEqual("The point is, ladies and gentleman, that Cash -- for lack of a better word -- is good. Cash is right. Cash works. Cash clarifies, cuts through, and captures the essence of the evolutionary spirit. Cash, in all of its forms -- Cash for life, for money, for love, knowledge -- has marked the upward surge of mankind", res.Message);
+            Assert.AreEqual("The point is, ladies and gentleman, that cash -- for lack of a better word -- is good. Cash is right. Cash works. Cash clarifies, cuts through, and captures the essence of the evolutionary spirit. Cash, in all of its forms -- Cash for life, for money, for love, knowledge -- has marked the upward surge of mankind.", res.Message);
             Assert.AreEqual("- BigCat", res.Subtitle);
         }
     }
