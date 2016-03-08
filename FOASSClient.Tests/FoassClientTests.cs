@@ -375,6 +375,15 @@ namespace FOASSClient.Tests
         }
 
         [TestMethod]
+        public async Task FuckingMorninShouldWork()
+        {
+            var res = await _foaasClient.Mornin("Monday");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("Happy fuckin' Mornin'!", res.Message);
+            Assert.AreEqual("- Monday", res.Subtitle);
+        }
+
+        [TestMethod]
         public async Task FuckingThumbsShouldWork()
         {
             var res = await _foaasClient.Thumbs("This Guy","Me");
@@ -390,6 +399,15 @@ namespace FOASSClient.Tests
             Assert.IsNotNull(res);
             Assert.AreEqual("You Fucktard!",res.Message);
             Assert.AreEqual("- Josh",res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingGreedShouldWork()
+        {
+            var res = await _foaasClient.Greed("Cash", "BigCat");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("The point is, ladies and gentleman, that cash -- for lack of a better word -- is good. Cash is right. Cash works. Cash clarifies, cuts through, and captures the essence of the evolutionary spirit. Cash, in all of its forms -- Cash for life, for money, for love, knowledge -- has marked the upward surge of mankind.", res.Message);
+            Assert.AreEqual("- BigCat", res.Subtitle);
         }
     }
 }

@@ -48,7 +48,9 @@ namespace FOAASClient
         Task<Response> Zayn(string from);
         Task<Response> KeepCalm(string reaction, string from);
         Task<Response> DoSomething(string todo, string something, string from);
+        Task<Response> Mornin(string from);
         Task<Response> Thumbs(string who, string from);
         Task<Response> Retard(string from);
+        Task<Response> Greed(string noun, string from);
     }
 }
