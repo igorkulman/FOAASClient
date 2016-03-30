@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FOASSClient</id>
+    <version>1.0.0.0</version>
+    <title>FOASSClient</title>
+    <authors>Igor Kulman</authors>
+    <owners>Igor Kulman</owners>
+    <description>
+      Were you looking to leverage the cloud to tell someone to fuck themselves? Do you need to do it from .NET? Well fuck me! Look no further!
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+      Were you looking to leverage the cloud to tell someone to fuck themselves? Do you need to do it from .NET? Well fuck me! Look no further!
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/igorkulman/FOAASClient</projectUrl>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/igorkulman/FOAASClient/raw/master/LICENSE</licenseUrl>
+    <copyright>Copyright 2015 - 2016</copyright>
+    <dependencies>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="FOAASClient.dll" target="lib\portable-net40+sl4+win8+wp71+wpa81\FOAASClient.dll" />
+    <file src="FOAASClient.pdb" target="lib\portable-net40+sl4+win8+wp71+wpa81\FOAASClient.pdb" />
+  </files>
+</package>
