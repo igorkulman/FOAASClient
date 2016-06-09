@@ -10,7 +10,9 @@ namespace FOAASClient
     {
         private const string BaseUrl = "http://foaas.com";
 
-        private async Task<Response> Get(string url, params string[] parameters)
+        private readonly HttpClient client;
+
+        public FoaasClient()
         {
             var handler = new HttpClientHandler();
             if (handler.SupportsAutomaticDecompression)
@@ -18,10 +20,13 @@ namespace FOAASClient
                 handler.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
             }
 
-            var client = new HttpClient(handler);
+            client = new HttpClient(handler);
             client.DefaultRequestHeaders.TryAddWithoutValidation("Accept", "application/json");
             client.DefaultRequestHeaders.TryAddWithoutValidation("Accept-Encoding", "gzip, deflate");
-            
+        }
+
+        private async Task<Response> Get(string url, params string[] parameters)
+        {
             var res = await client.GetStringAsync(BaseUrl + url+"/"+string.Join("/", parameters));
             return JsonConvert.DeserializeObject<Response>(res);
         }
