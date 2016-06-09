@@ -19,8 +19,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/igorkulman/FOAASClient/raw/master/LICENSE</licenseUrl>
     <copyright>Copyright 2015 - 2016</copyright>
-    <dependencies>
-    </dependencies>
+    @dependencies@
     <references></references>
     <tags></tags>
   </metadata>

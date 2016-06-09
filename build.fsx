@@ -9,7 +9,7 @@ let buildDir = @".\build\"
 let testDir  = @".\test\"
 let packagesDir = @".\packages"
 let packagingRoot = "./packaging/"
-let packagesVersion = "1.0.0.0"
+let packagesVersion = "1.0.0.3"
 
 // Targets
 Target "Clean" (fun _ ->
@@ -28,7 +28,10 @@ Target "CreateNugetPackage" (fun _ ->
             Project = "FOAASClient"          
             OutputPath = packagingRoot
             WorkingDir = buildDir
-            Version = packagesVersion           
+            Version = packagesVersion
+            Dependencies =
+                ["Newtonsoft.Json", GetPackageVersion "./packages/" "Newtonsoft.Json"
+                 "Microsoft.Net.Http", GetPackageVersion "./packages/" "Microsoft.Net.Http"]
             Publish = true
             }) "FOAASClient.nuspec"
 )
