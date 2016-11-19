@@ -587,5 +587,122 @@ namespace FOASSClient.Tests
             Assert.AreEqual("", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
+
+        [TestMethod]
+        public async Task FuckingOffWithShouldWork()
+        {
+            var res = await _foaasClient.OffWith("That", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingParticularShouldWork()
+        {
+            var res = await _foaasClient.Particular("Sausage", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingProblemShouldWork()
+        {
+            var res = await _foaasClient.Problem("Frank", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me",  res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingPulpShouldWork()
+        {
+            var res = await _foaasClient.Pulp("Japanese", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingRidiculousShouldWork()
+        {
+            var res = await _foaasClient.Ridiculous("Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task ReadingTheFuckingManualShouldWork()
+        {
+            var res = await _foaasClient.ReadTheManual("Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingSakeShouldWork()
+        {
+            var res = await _foaasClient.Sake("Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingShitShouldWork()
+        {
+            var res = await _foaasClient.Shit("Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingSingleShouldWork()
+        {
+            var res = await _foaasClient.Single("Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingThinkShouldWork()
+        {
+            var res = await _foaasClient.Think("Frank", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingThinkingShouldWork()
+        {
+            var res = await _foaasClient.Thinking("Frank","Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingTooShouldWork()
+        {
+            var res = await _foaasClient.Too("Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingZeroShouldWork()
+        {
+            var res = await _foaasClient.Zero("Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
     }
 }
