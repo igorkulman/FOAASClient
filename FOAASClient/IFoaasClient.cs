@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -52,5 +53,36 @@ namespace FOAASClient
         Task<Response> Thumbs(string who, string from);
         Task<Response> Retard(string from);
         Task<Response> Greed(string noun, string from);
+        Task<Response> Anyway(string company, string from);
+        Task<Response> Back(string name, string from);
+        Task<Response> Bag(string from);
+        Task<Response> Blackadder(string name, string from);
+        Task<Response> BravoMike(string name, string from);
+        Task<Response> Cocksplat(string name, string from);
+        Task<Response> Dalton(string name, string from);
+        Task<Response> Deraadt(string name, string from);
+        Task<Response> GolfFoxtrotYankee(string name, string from);
+        Task<Response> Give(string from);
+        Task<Response> Horse(string from);
+        Task<Response> FuckingOff(string name, string from);
+        Task<Response> Keep(string name, string from);
+        Task<Response> Look(string name, string from);
+        Task<Response> Looking(string from);
+        Task<Response> Maybe(string from);
+        Task<Response> Me(string from);
+        Task<Response> No(string from);
+        Task<Response> OffWith(string behaviour, string from);
+        Task<Response> Particular(string obj, string from);
+        Task<Response> Problem(string name, string from);
+        Task<Response> Pulp(string language, string from);
+        Task<Response> Ridiculous(string from);
+        Task<Response> ReadTheManual(string from);
+        Task<Response> Sake(string from);
+        Task<Response> Shit(string from);
+        Task<Response> Single(string from);
+        Task<Response> Think(string name, string from);
+        Task<Response> Thinking(string name, string from);
+        Task<Response> Too(string from);
+        Task<Response> Zero(string from);
     }
 }
