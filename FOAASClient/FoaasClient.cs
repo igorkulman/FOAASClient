@@ -250,5 +250,160 @@ namespace FOAASClient
         {
             return Get("/greed", noun, from);
         }
+
+        public Task<Response> Anyway(string company, string from)
+        {
+            return Get("/anyway", company, from);
+        }
+
+        public Task<Response> Back(string name, string from)
+        {
+            return Get("/back", name, from);
+        }
+
+        public Task<Response> Bag(string from)
+        {
+            return Get("/bag", from);
+        }
+
+        public Task<Response> Blackadder(string name, string from)
+        {
+            return Get("/blackadder", name, from);
+        }
+
+        public Task<Response> BravoMike(string name, string from)
+        {
+            return Get("/bm",name, from);
+        }
+
+        public Task<Response> Cocksplat(string name, string from)
+        {
+            return Get("/cocksplat", name, from);
+        }
+
+        public Task<Response> Dalton(string name, string from)
+        {
+            return Get("/dalton", name,from);
+        }
+
+        public Task<Response> Deraadt(string name, string from)
+        {
+            return Get("/deraadt",name,from);
+        }
+
+        public Task<Response> GolfFoxtrotYankee(string name, string from)
+        {
+            return Get("/gfy",name, from);
+        }
+
+        public Task<Response> Give(string from)
+        {
+            return Get("/give", from);
+        }
+
+        public Task<Response> Horse(string from)
+        {
+            return Get("/horse", from);
+        }
+
+        public Task<Response> FuckingOff(string name, string from)
+        {
+            return Get("/ing",name, from);
+        }
+
+        public Task<Response> Keep(string name, string from)
+        {
+            return Get("/keep",name,from);
+        }
+
+        public Task<Response> Look(string name, string from)
+        {
+            return Get("/look", name, from);
+        }
+
+        public Task<Response> Looking(string from)
+        {
+            return Get("/looking",from);
+        }
+
+        public Task<Response> Maybe(string from)
+        {
+            return Get("/maybe", from);
+        }
+
+        public Task<Response> Me(string from)
+        {
+            return Get("/me",from);
+        }
+
+        public Task<Response> No(string from)
+        {
+            return Get("/no",from);
+        }
+
+        public Task<Response> OffWith(string behaviour, string from)
+        {
+            return Get("/off-with",behaviour,from);
+        }
+
+        public Task<Response> Particular(string obj, string from)
+        {
+            return Get("/particular",obj, from);
+        }
+
+        public Task<Response> Problem(string name, string from)
+        {
+            return Get("/problem", name,from);
+        }
+
+        public Task<Response> Pulp(string language, string from)
+        {
+            return Get("/pulp",language,from);
+        }
+
+        public Task<Response> Ridiculous(string from)
+        {
+            return Get("/ridiculous", from);
+        }
+
+        public Task<Response> ReadTheManual(string from)
+        {
+            return Get("/rtfm", from);
+        }
+
+        public Task<Response> Sake(string from)
+        {
+            return Get("/sake", from);
+        }
+
+        public Task<Response> Shit(string from)
+        {
+            return Get("/shit", from);
+        }
+
+        public Task<Response> Single(string from)
+        {
+            return Get("/single", from);
+        }
+
+        public Task<Response> Think(string name, string from)
+        {
+            return Get("/think", name, from);
+        }
+
+        public Task<Response> Thinking(string name, string from)
+        {
+            return Get("/thinking", name, from);
+        }
+
+        public Task<Response> Too(string from)
+        {
+            return Get("/too", from);
+        }
+
+        public Task<Response> Zero(string from)
+        {
+            return Get("/zero", from);
+        }
     }
 }
