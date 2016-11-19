@@ -429,7 +429,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Anyway("Microsoft", "Someone Else");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Who the fuck are you anyway, Microsoft, why are you stirring up so much trouble, and, who pays you?", res.Message);
             Assert.AreEqual("- Someone Else", res.Subtitle);
         }
 
@@ -438,7 +438,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Back("You", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("You, back the fuck off.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -447,7 +447,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Bag("Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Eat a bag of fucking dicks.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -456,16 +456,16 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Blackadder("You", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("You, your head is as empty as a eunuch’s underpants. Fuck off!", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
         [TestMethod]
         public async Task FuckingBravoMikeShouldWork()
         {
-            var res = await _foaasClient.BravoMike("You", "Me");
+            var res = await _foaasClient.BravoMike("Frank", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("'Bravo mike, Frank.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -474,7 +474,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Cocksplat("Frank", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Fuck off Frank, you worthless cocksplat", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -483,16 +483,16 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Dalton("You", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("You: A fucking problem solving super-hero.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
         [TestMethod]
         public async Task FuckingDeraadtShouldWork()
         {
-            var res = await _foaasClient.Deraadt("You", "Me");
+            var res = await _foaasClient.Deraadt("Frank", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Frank you are being the usual slimy hypocritical asshole... You may have had value ten years ago, but people will see that you don't anymore.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -501,7 +501,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.GolfFoxtrotYankee("Frank", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Golf foxtrot yankee, Frank.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -510,18 +510,16 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Give("Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("'I give zero fucks.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
-
-
 
         [TestMethod]
         public async Task FuckingHorseShouldWork()
         {
             var res = await _foaasClient.Horse("Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Fuck you and the horse you rode in on.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -530,7 +528,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.FuckingOff("Frank", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Fucking fuck off, Frank.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -539,7 +537,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Keep("Frank", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("",res.Message);
+            Assert.AreEqual("Frank Fuck off. And when you get there, fuck off from there too. Then fuck off some more. Keep fucking off until you get back here. Then fuck off again.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -548,7 +546,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Look("Frank", "Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Frank, do I look like I give a fuck?", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -557,7 +555,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Looking("Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Looking for a fuck to give.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -566,7 +564,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Maybe("Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Maybe. Maybe not. Maybe fuck yourself.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -575,7 +573,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.Me("Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("Fuck me.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
@@ -584,7 +582,7 @@ namespace FOASSClient.Tests
         {
             var res = await _foaasClient.No("Me");
             Assert.IsNotNull(res);
-            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("No fucks given.", res.Message);
             Assert.AreEqual("- Me", res.Subtitle);
         }
 
