@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 using FOAASClient;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -409,5 +410,76 @@ namespace FOASSClient.Tests
             Assert.AreEqual("The point is, ladies and gentleman, that cash -- for lack of a better word -- is good. Cash is right. Cash works. Cash clarifies, cuts through, and captures the essence of the evolutionary spirit. Cash, in all of its forms -- Cash for life, for money, for love, knowledge -- has marked the upward surge of mankind.", res.Message);
             Assert.AreEqual("- BigCat", res.Subtitle);
         }
-    }
+
+        [TestMethod]
+        public async Task FuckingAnywayShouldWork()
+        {
+            var res = await _foaasClient.Anyway("Microsoft", "Someone Else");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("",res.Message);
+            Assert.AreEqual("- Someone Else", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingBackShouldWork()
+        {
+            var res = await _foaasClient.Back("You", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingBagShouldWork()
+        {
+            var res = await _foaasClient.Bag("Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingBlackadderShouldWork()
+        {
+            var res = await _foaasClient.Blackadder("You", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingBravoMikeShouldWork()
+        {
+            var res = await _foaasClient.BravoMike("You", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingCocksplatShouldWork()
+        {
+            var res = await _foaasClient.Cocksplat("Frank", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingDaltonShouldWork()
+        {
+            var res = await _foaasClient.Dalton("You", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
+
+        [TestMethod]
+        public async Task FuckingDeraadtShouldWork()
+        {
+            var res = await _foaasClient.Deraadt("You", "Me");
+            Assert.IsNotNull(res);
+            Assert.AreEqual("", res.Message);
+            Assert.AreEqual("- Me", res.Subtitle);
+        }
 }
