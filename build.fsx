@@ -1,7 +1,7 @@
 // include Fake lib
 #r @"tools\FAKE\tools\FakeLib.dll"
 open Fake
- 
+
 RestorePackages()
 
 // Properties
@@ -9,7 +9,7 @@ let buildDir = @".\build\"
 let testDir  = @".\test\"
 let packagesDir = @".\packages"
 let packagingRoot = "./packaging/"
-let packagesVersion = "1.0.0.3"
+let packagesVersion = "1.0.1.0"
 
 // Targets
 Target "Clean" (fun _ ->
@@ -22,10 +22,10 @@ Target "Build" (fun _ ->
       |> Log "AppBuild-Output: "
 )
 
-Target "CreateNugetPackage" (fun _ ->    
-    NuGet (fun p -> 
-        {p with                  
-            Project = "FOAASClient"          
+Target "CreateNugetPackage" (fun _ ->
+    NuGet (fun p ->
+        {p with
+            Project = "FOAASClient"
             OutputPath = packagingRoot
             WorkingDir = buildDir
             Version = packagesVersion
@@ -41,10 +41,10 @@ Target "Default" (fun _ ->
 )
 
 // Dependencies
-"Clean"  
+"Clean"
   ==> "Build"
   ==> "CreateNugetPackage"
   ==> "Default"
- 
+
 // start build
 Run "Default"
